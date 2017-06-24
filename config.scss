@@ -1,0 +1,8 @@
+$pre-background-colors-support-parser: (
+    border-color: 'background-inner-color',
+    background: 'background-inner-color',
+    color: 'color'
+) !default;
+
+$pre-background-colors-support-extra-colors-palette: () !default;
+$pre-background-colors-support-skip-colors-palette: null !default;
