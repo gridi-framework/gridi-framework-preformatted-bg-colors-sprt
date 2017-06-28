@@ -1,5 +1,5 @@
 @each $palette-color-prefix, $palette-color-variables in get-background-colors-palette($pre-background-colors-support-extra-colors-palette, $pre-background-colors-support-skip-colors-palette) {
     .#{$background-colors-class-prefix}-#{$palette-color-prefix} {
-        @include pre-colors(map_get($palette-color-variables, map_get($pre-background-colors-support-parser, border-color)), map_get($palette-color-variables, map_get($pre-background-colors-support-parser, background)), map_get($palette-color-variables, map_get($pre-background-colors-support-parser, color)));
+        @include pre-colors(parse-map($pre-background-colors-support-parser, $palette-color-variables));
     }
 }
